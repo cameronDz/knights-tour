@@ -1,0 +1,13 @@
+# Basic files to be ignored
+.classpath
+.project
+.settings/
+.metadata/
+
+.DS_Store
+
+target/
+bin/
+
+*.bak
+*.swp
