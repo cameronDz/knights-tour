@@ -32,7 +32,7 @@ public class ChessVertice {
 	 * Returns vertices name with respect to row/column.
 	 */
 	public String toString() {
-		return colString(col) + row;
+		return columnString(col) + row;
 	}
 
 	/**
@@ -57,30 +57,30 @@ public class ChessVertice {
 	}
 
 	/**
-	 * Case sequence to determine letter representation for column.
+	 * Case sequence to determine letter representation for column. Will return "H"
+	 * by default.
 	 * 
-	 * @param c
-	 * @return
+	 * @param column
+	 *            Integer value being converted into a character, "A"-"H".
+	 * @return Character representation of the column number.
 	 */
-	private String colString(int c) {
-		switch (c) {
-		case 1:
+	private String columnString(int column) {
+		if (column == 1) {
 			return "A";
-		case 2:
+		} else if (column == 2) {
 			return "B";
-		case 3:
+		} else if (column == 3) {
 			return "C";
-		case 4:
+		} else if (column == 4) {
 			return "D";
-		case 5:
+		} else if (column == 5) {
 			return "E";
-		case 6:
+		} else if (column == 6) {
 			return "F";
-		case 7:
+		} else if (column == 7) {
 			return "G";
-		default:
-			return "H";
 		}
+		return "H";
 	}
 
 	/**
