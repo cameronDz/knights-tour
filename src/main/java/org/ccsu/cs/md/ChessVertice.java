@@ -65,6 +65,7 @@ public class ChessVertice {
 	 * @return Character representation of the column number.
 	 */
 	private String columnString(int column) {
+		// TODO add unit tests
 		if (column == 1) {
 			return "A";
 		} else if (column == 2) {
@@ -89,6 +90,7 @@ public class ChessVertice {
 	 * @return
 	 */
 	private int findAdjVerts() {
+		// TODO add unit tests
 		int verts = 0;
 		for (int x = -2; x <= 2; x++) {
 			int destRow = row + x;

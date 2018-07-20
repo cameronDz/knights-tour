@@ -5,4 +5,6 @@
   <version>0.1</version>
   <name>Knights-Tour-App</name>
   <description>Simple app that completes a Knight's Tour using Wandorff's algorithm.</description>
+  
+  <!-- TODO Add Jacoco Plugin -->
 </project>

@@ -6,6 +6,7 @@ package org.ccsu.cs.md;
  * @author Cameron
  */
 public class ConvertChar {
+	
 	/**
 	 * Used to take char in and turn into correct row/col integer.
 	 * 
@@ -13,6 +14,7 @@ public class ConvertChar {
 	 * @return
 	 */
 	public static int toInt(char c) {
+		// TODO add unit tests
 		String x = Character.toString(c);
 		if (x.equals("A") || x.equals("1")) {
 			return 1;
