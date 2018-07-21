@@ -48,7 +48,7 @@
 					<archive>
 						<manifest>
 							<!-- Jar file entry point -->
-							<mainClass>org.ccsu.cs.md.tour.simpe.KnightTourApp</mainClass>
+							<mainClass>org.ccsu.cs.md.tour.simple.KnightTourApp</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
