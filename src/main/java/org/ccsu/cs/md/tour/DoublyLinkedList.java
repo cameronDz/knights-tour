@@ -1,4 +1,4 @@
-package org.ccsu.cs.md;
+package org.ccsu.cs.md.tour;
 
 /**
  * A basic doubly linked list implementation. Used to link ChessVertice objects

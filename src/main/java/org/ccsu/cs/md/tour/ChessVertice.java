@@ -1,4 +1,4 @@
-package org.ccsu.cs.md;
+package org.ccsu.cs.md.tour;
 
 /**
  * Object used for vertices in chess board graph.

@@ -1,4 +1,6 @@
-package org.ccsu.cs.md;
+package org.ccsu.cs.md.tour;
+
+import org.ccsu.cs.md.tour.simple.ChessConstants;
 
 public class ChessBoardGenerator {
 

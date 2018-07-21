@@ -1,4 +1,4 @@
-package org.ccsu.cs.md;
+package org.ccsu.cs.md.tour.simple;
 
 import java.util.Scanner;
 
@@ -15,12 +15,13 @@ public class KnightTourApp {
 		System.out.println(ChessConstants.INSTRUCTION);
 		System.out.println(ChessConstants.START_PROMPT);
 		// Takes user input, converts it into a position on a chess board. 
-		Scanner scan = new Scanner(System.in);
-		String userInput = scan.next();
-		int col = ConvertChar.toInt(userInput.charAt(0));
-		int row = ConvertChar.toInt(userInput.charAt(1));
+		Scanner scan = new Scanner(System.in); 
+		String userInput = scan.next(); 
+		int y = ConvertChar.toInt(userInput.charAt(0)); 
+		int x = ConvertChar.toInt(userInput.charAt(1)); 
+		int[][] tour = TourCalculator.createKnightsTourArray(x, y);  
+		String tourMap = TourPrinter.consolePrintTour(tour);
+		System.out.println(tourMap); 
 		scan.close();
-		ChessVertice origin = new ChessVertice(col, row);  
-		System.out.println(); 
 	}
 }

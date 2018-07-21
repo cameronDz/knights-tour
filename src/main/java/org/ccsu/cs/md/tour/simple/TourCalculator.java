@@ -1,4 +1,4 @@
-package org.ccsu.cs.md;
+package org.ccsu.cs.md.tour.simple;
 
 /**
  * Used to calculate a Knight's Tour based off Warndorff's algorithm.
@@ -21,14 +21,14 @@ public class TourCalculator {
 	 *         for a Knight's Tour.
 	 */
 	public static int[][] createKnightsTourArray(int x, int y) {
-		int[][] board = new int[8][8];
-		initializeNextMoveVariables();
+		int[][] board = new int[8][8]; 
 		int move = 1;
 		board[x][y] = move;
 
 		// Loop executes while there are still open vertices connected to current
 		// position.
-		while (calculateDegrees(x, y, board) > 0) {
+		while (calculateDegrees(x, y, board) > 0) { 
+			initializeNextMoveVariables();  
 			move++;
 			// Go through 8 possible Knight moves
 			comparePossibleMoveAgainstNextMove(x + 2, y - 1, board);
@@ -39,10 +39,10 @@ public class TourCalculator {
 			comparePossibleMoveAgainstNextMove(x + 1, y + 2, board);
 			comparePossibleMoveAgainstNextMove(x - 1, y - 2, board);
 			comparePossibleMoveAgainstNextMove(x - 1, y + 2, board);
-			// Next X and Y values are store and move to the matrix
+			// Next X and Y values are stored and move to the matrix
 			x = nextX;
 			y = nextY;
-			board[x][y] = move;
+			board[x][y] = move; 
 		}
 		return board;
 	}
@@ -90,7 +90,6 @@ public class TourCalculator {
 	 * @return
 	 */
 	private static boolean checkXYPosition(int x, int y, int[][] board) {
-
 		if (x < 0) {
 			return false;
 		}
@@ -103,7 +102,7 @@ public class TourCalculator {
 		if (y >= 8) {
 			return false;
 		}
-		if (board[x][y] != 0) {
+		if (board[x][y] > 0) {
 			return false;
 		}
 		return true;
@@ -121,9 +120,7 @@ public class TourCalculator {
 	 * @return
 	 */
 	private static int calculateDegrees(int x, int y, int[][] board) {
-
 		int degrees = 0;
-
 		// Each if represent a different knight move from the node. Checks for node
 		// being on the board, and not yet on the tour.Incrememts counter if node is
 		// open.

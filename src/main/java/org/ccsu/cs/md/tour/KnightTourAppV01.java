@@ -1,6 +1,8 @@
-package org.ccsu.cs.md;
+package org.ccsu.cs.md.tour;
 
 import java.util.Scanner;
+
+import org.ccsu.cs.md.tour.simple.ConvertChar;
 
 /**
  * Create a chess board and use an algorithm to find a "knights tour" from a
