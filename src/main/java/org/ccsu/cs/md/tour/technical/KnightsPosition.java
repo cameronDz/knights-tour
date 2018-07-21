@@ -1,4 +1,4 @@
-package org.ccsu.cs.md.tour;
+package org.ccsu.cs.md.tour.technical;
 
 /**
  * Object that hold ChessVertice, a LLPositional Queue of adjacent vertices

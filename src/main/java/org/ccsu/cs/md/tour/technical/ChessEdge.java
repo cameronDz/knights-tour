@@ -1,4 +1,4 @@
-package org.ccsu.cs.md.tour;
+package org.ccsu.cs.md.tour.technical;
 
 /**
  * Object used to hold edges in a knight's tour path on a chess board graph.

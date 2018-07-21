@@ -1,4 +1,4 @@
-package org.ccsu.cs.md.tour;
+package org.ccsu.cs.md.tour.technical;
 
 import org.ccsu.cs.md.tour.simple.ChessConstants;
 
