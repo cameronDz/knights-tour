@@ -8,7 +8,7 @@ package org.ccsu.cs.md;
  * @author Cameron
  */
 public class KnightsPosition {
-	private ChessVertice currentVert;
+	private ChessVertice currentVertice;
 	private int move;
 	// private LLPositionalQueue adjVertices;
 	private DoublyLinkedList currentTour;
@@ -19,9 +19,9 @@ public class KnightsPosition {
 	
 	/**
 	 * 
-	 * @param c
+	 * @param initialVertice
 	 */
-	public KnightsPosition(ChessVertice c) {
-		
+	public KnightsPosition(ChessVertice initialVertice) {
+		currentVertice = initialVertice;
 	}
 }
